@@ -4,15 +4,19 @@ import { useStores } from "./store";
 import "./App.less";
 
 const App = () => {
-  const { countStore } = useStores();
+  const { countStore, equipStore } = useStores();
   const { num, add } = countStore;
+  const { equipList, getEquipList } = equipStore;
   return (
     <>
       <h2>count:{num}</h2>
       <Button type="primary" onClick={() => add()}>
         +1
       </Button>
-      <Button className={"test-button"}>测试按钮</Button>
+      <h3>{equipList?.toString() ?? null}</h3>
+      <Button className={"test-button"} onClick={getEquipList}>
+        测试按钮
+      </Button>
     </>
   );
 };
