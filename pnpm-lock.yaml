@@ -4,12 +4,16 @@ specifiers:
   '@types/react': ^17.0.33
   '@types/react-dom': ^17.0.10
   '@vitejs/plugin-react': ^1.0.7
+  mobx: ^6.5.0
+  mobx-react: ^7.3.0
   react: ^17.0.2
   react-dom: ^17.0.2
   typescript: ^4.5.4
   vite: ^2.9.0
 
 dependencies:
+  mobx: registry.npmmirror.com/mobx/6.5.0
+  mobx-react: registry.npmmirror.com/mobx-react/7.3.0_3b110ddd052df537d55bc762cdd4d0b8
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
 
@@ -874,6 +878,55 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: registry.npmmirror.com/js-tokens/4.0.0
+    dev: false
+
+  registry.npmmirror.com/mobx-react-lite/3.3.0_3b110ddd052df537d55bc762cdd4d0b8:
+    resolution: {integrity: sha512-U/kMSFtV/bNVgY01FuiGWpRkaQVHozBq5CEBZltFvPt4FcV111hEWkgwqVg9GPPZSEuEdV438PEz8mk8mKpYlA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mobx-react-lite/-/mobx-react-lite-3.3.0.tgz}
+    id: registry.npmmirror.com/mobx-react-lite/3.3.0
+    name: mobx-react-lite
+    version: 3.3.0
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: registry.npmmirror.com/mobx/6.5.0
+      react: registry.npmmirror.com/react/17.0.2
+      react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  registry.npmmirror.com/mobx-react/7.3.0_3b110ddd052df537d55bc762cdd4d0b8:
+    resolution: {integrity: sha512-RGEcwZokopqyJE5JPwXKB9FWMSqFM9NJVO2QPI+z6laJTJeBHqvPicjnKgY5mvihxTeXB1+72TnooqUePeGV1g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mobx-react/-/mobx-react-7.3.0.tgz}
+    id: registry.npmmirror.com/mobx-react/7.3.0
+    name: mobx-react
+    version: 7.3.0
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: registry.npmmirror.com/mobx/6.5.0
+      mobx-react-lite: registry.npmmirror.com/mobx-react-lite/3.3.0_3b110ddd052df537d55bc762cdd4d0b8
+      react: registry.npmmirror.com/react/17.0.2
+      react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  registry.npmmirror.com/mobx/6.5.0:
+    resolution: {integrity: sha512-pHZ/cySF00FVENDWIDzJyoObFahK6Eg4d0papqm6d7yMkxWTZ/S/csqJX1A3PsYy4t5k3z2QnlwuCfMW5lSEwA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mobx/-/mobx-6.5.0.tgz}
+    name: mobx
+    version: 6.5.0
     dev: false
 
   registry.npmmirror.com/ms/2.1.2:
