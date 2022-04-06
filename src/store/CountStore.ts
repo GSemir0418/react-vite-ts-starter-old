@@ -5,7 +5,7 @@ class Count {
     makeAutoObservable(this);
   }
   num = 0;
-  setNum = () => {
+  add = () => {
     this.num += 1;
   };
 }

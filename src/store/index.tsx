@@ -5,6 +5,6 @@ import countStore from "./CountStore";
 configure({ enforceActions: "always" });
 
 export const stores = { countStore };
-export const CounterContext = React.createContext(stores);
+export const storeContext = React.createContext(stores);
 
-export const useStores = () => React.useContext(CounterContext);
+export const useStores = () => React.useContext(storeContext);
