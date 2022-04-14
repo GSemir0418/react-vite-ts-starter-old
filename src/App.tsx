@@ -22,14 +22,19 @@
 // };
 // export default observer(App);
 import Router from "./router";
-import { Link } from "react-router-dom";
+import { HashRouter, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Link to="/">Home Page</Link>
-      <Link to="/screen2">Screen2 Page</Link>
-      <Router />
+      <HashRouter>
+        <Link to="/">Home Page</Link>
+        <Link to="/page1">Page1</Link>
+        <Link to="/page2">Page2</Link>
+        <Link to="/page3">Page3</Link>
+        <Link to="/page4">Page4</Link>
+        <Router />
+      </HashRouter>
     </div>
   );
 }
